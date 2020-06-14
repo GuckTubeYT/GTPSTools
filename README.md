@@ -5,7 +5,7 @@ This app Allow you Auto setting server, Controlling Server, etc with GTPSTools
 - NET Framework 4.6 Or UP
 ## Update
 - Version 1.0
-
+---
 2. Auto Restarter
 3. GTPS Auto Set
 4. Edit Text Maintenance
