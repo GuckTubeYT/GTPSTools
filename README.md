@@ -13,4 +13,4 @@ This app Allow you Auto setting server, Controlling Server, etc with GTPSTools
 1. Put this app to your GTPS Folder
 2. Change enet server test.exe to enet.exe
 ## NOTE
-Please dont change Owner Name and dont Re-Sell This App. Dont forget to subscribe GuckTube YT: https://youtube.com/gucktubeyt
+Please dont change Owner Name and dont Re-Sell This App. Dont forget to subscribe GuckTube YT https://youtube.com/gucktubeyt
