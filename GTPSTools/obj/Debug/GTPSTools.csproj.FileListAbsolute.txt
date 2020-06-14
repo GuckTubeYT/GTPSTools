@@ -1,0 +1,11 @@
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.csprojAssemblyReference.cache
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.Form1.resources
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.Properties.Resources.resources
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.csproj.GenerateResource.cache
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.csproj.CoreCompileInputs.cache
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\bin\Debug\GTPSTools.exe.config
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\bin\Debug\GTPSTools.exe
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\bin\Debug\GTPSTools.pdb
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.exe
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.pdb
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.editmaintenance.resources
