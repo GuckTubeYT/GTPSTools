@@ -5,12 +5,11 @@ This app Allow you Auto setting server, Controlling Server, etc with GTPSTools
 - NET Framework 4.6 Or UP
 ## Update
 - Version 1.0
----
-2. Auto Restarter
-3. GTPS Auto Set
-4. Edit Text Maintenance
-5. Turn On/Off Maintenance Mode
-6. Turn On/Off enet.exe (Server)
+1. Auto Restarter
+2. GTPS Auto Set
+3. Edit Text Maintenance
+4. Turn On/Off Maintenance Mode
+5. Turn On/Off enet.exe (Server)
 ## How to use
 1. Put this app to your GTPS Folder
 2. Change enet server test.exe to enet.exe
