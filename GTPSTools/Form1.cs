@@ -98,7 +98,7 @@ namespace GTPSTools
             proc1.WaitForExit();
             Process proc2 = new Process();
             string top2 = "netsh.exe";
-            proc2.StartInfo.Arguments = "netsh firewall add portopening TCP 80 80";
+            proc2.StartInfo.Arguments = "firewall add portopening TCP 80 80";
             proc2.StartInfo.FileName = top2;
             proc2.StartInfo.UseShellExecute = false;
             proc2.StartInfo.RedirectStandardOutput = true;
