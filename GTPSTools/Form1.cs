@@ -107,7 +107,7 @@ namespace GTPSTools
             proc2.WaitForExit();
             Process proc3 = new Process();
             string top3 = "netsh.exe";
-            proc2.StartInfo.Arguments = "netsh firewall add portopening TCP " + port.Text + " " + port.Text;
+            proc2.StartInfo.Arguments = "firewall add portopening UDP " + port.Text + " " + port.Text;
             proc2.StartInfo.FileName = top3;
             proc2.StartInfo.UseShellExecute = false;
             proc2.StartInfo.RedirectStandardOutput = true;
