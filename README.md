@@ -10,6 +10,9 @@ This app Allow you Auto setting server, Controlling Server, etc with GTPSTools
 3. Edit Text Maintenance
 4. Turn On/Off Maintenance Mode
 5. Turn On/Off enet.exe (Server)
+---
+- Version 1.1
+1. Fixed Firewall (Auto Set GTPS) (My Bad xD)
 ## How to use
 1. Put this app to your GTPS Folder
 2. Change enet server test.exe to enet.exe
