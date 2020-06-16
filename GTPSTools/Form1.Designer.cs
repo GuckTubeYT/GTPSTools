@@ -37,6 +37,7 @@ namespace GTPSTools
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -52,13 +53,13 @@ namespace GTPSTools
             this.port = new System.Windows.Forms.TextBox();
             this.ip = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,6 +79,7 @@ namespace GTPSTools
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button4);
@@ -91,6 +93,16 @@ namespace GTPSTools
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(8, 116);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(94, 49);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "DontShowUI (Bypass Error Reporting)";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -247,6 +259,46 @@ namespace GTPSTools
             this.tabPage3.Text = "How To Use This App";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(8, 162);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(115, 16);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "And Then Done";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(8, 127);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(167, 16);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "2. Press Auto Restarter";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(8, 111);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(276, 16);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "1. If enet.exe running, please close first";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(187, 16);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "How to use Auto Restarter";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -277,46 +329,6 @@ namespace GTPSTools
             this.label4.TabIndex = 0;
             this.label4.Text = "1. Change enet server test.exe to enet.exe";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(8, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 16);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "How to use Auto Restarter";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(8, 111);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(276, 16);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "1. If enet.exe running, please close first";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(8, 127);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(167, 16);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "2. Press Auto Restarter";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(8, 162);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(115, 16);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "And Then Done";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,6 +337,7 @@ namespace GTPSTools
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "GTPSTools";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -361,6 +374,7 @@ namespace GTPSTools
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button8;
     }
 }
 

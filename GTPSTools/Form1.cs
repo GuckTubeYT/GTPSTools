@@ -20,6 +20,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net;
 using System.Diagnostics;
+using System.Security.Permissions;
+using Microsoft.Win32;
 
 namespace GTPSTools
 {
@@ -52,18 +54,18 @@ namespace GTPSTools
             richTextBox1.Clear();
             if (string.IsNullOrWhiteSpace(ip.Text))
             {
-               MessageBox.Show("Please Input IP On TextBox", "GTPSControllerCS",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Input IP On TextBox", "GTPSControllerCS", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (string.IsNullOrWhiteSpace(port.Text))
             {
-                MessageBox.Show("Please Input Port On TextBox", "GTPSControllerCS",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please Input Port On TextBox", "GTPSControllerCS", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             System.IO.Directory.CreateDirectory(cuser + @"\AppData\Local\Temp\gtpstools");
             string toolpath = cuser + @"AppData\Local\Temp\gtpstools";
             if (Directory.Exists(toolpath))
-    {
+            {
                 using (System.IO.StreamWriter file =
             new System.IO.StreamWriter(toolpath + "ip.txt", false))
                 {
@@ -107,7 +109,7 @@ namespace GTPSTools
             proc2.WaitForExit();
             Process proc3 = new Process();
             string top3 = "netsh.exe";
-            proc2.StartInfo.Arguments = "firewall add portopening UDP " + port.Text + " " + port.Text;
+            proc2.StartInfo.Arguments = "firewall add portopening TCP " + port.Text + " " + port.Text;
             proc2.StartInfo.FileName = top3;
             proc2.StartInfo.UseShellExecute = false;
             proc2.StartInfo.RedirectStandardOutput = true;
@@ -188,6 +190,7 @@ namespace GTPSTools
                 return;
             }
             System.Diagnostics.Process.Start("loop.bat");
+            return;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -213,5 +216,36 @@ namespace GTPSTools
             }
             return;
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (!File.Exists("dontshowui.bat"))
+            {
+                using (System.IO.StreamWriter file2 =
+            new System.IO.StreamWriter("dontshowui.bat", false))
+                {
+                    string slash = @"\";
+                    file2.WriteLine("REG ADD \"HKLM" + slash + "SOFTWARE" + slash + "Microsoft" + slash + "Windows" + slash + "Windows Error Reporting\" /f /v DontShowUI /t REG_DWORD /d 1");
+                    file2.WriteLine("pause");
+                    file2.Close();
+                }
+                System.Diagnostics.Process.Start("dontshowui.bat");
+                return;
+            }
+            using (System.IO.StreamWriter file2 =
+            new System.IO.StreamWriter("dontshowui.bat", false))
+            {
+                string slash = @"\";
+                file2.WriteLine("REG ADD \"HKLM" + slash + "SOFTWARE" + slash + "Microsoft" + slash + "Windows" + slash + "Windows Error Reporting\" /f /v DontShowUI /t REG_DWORD /d 1");
+                file2.WriteLine("pause");
+                file2.Close();
+                System.Diagnostics.Process.Start("dontshowui.bat");
+                return;
+            }
+        }
+
+            private void Form1_Load(object sender, EventArgs e)
+            {
+                this.MaximizeBox = false;
+            }
+        }
     }
-}
