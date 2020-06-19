@@ -9,3 +9,4 @@ C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\bin\Debug\GTPSTools.pdb
 C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.exe
 C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.pdb
 C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.editmaintenance.resources
+C:\Users\rahmat\source\repos\GTPSTools\GTPSTools\obj\Debug\GTPSTools.Hosts.resources

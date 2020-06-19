@@ -243,9 +243,15 @@ namespace GTPSTools
             }
         }
 
-            private void Form1_Load(object sender, EventArgs e)
-            {
-                this.MaximizeBox = false;
-            }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Hosts form = new Hosts();
+            form.Show();
         }
     }
+}

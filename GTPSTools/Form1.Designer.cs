@@ -37,6 +37,7 @@ namespace GTPSTools
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -79,6 +80,7 @@ namespace GTPSTools
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button10);
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.button6);
@@ -93,6 +95,16 @@ namespace GTPSTools
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Main Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(106, 116);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(94, 49);
+            this.button10.TabIndex = 8;
+            this.button10.Text = "Hosts Auto Maker";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button8
             // 
@@ -375,6 +387,7 @@ namespace GTPSTools
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button10;
     }
 }
 
