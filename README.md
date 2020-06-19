@@ -17,6 +17,9 @@ This app Allow you Auto setting server, Controlling Server, etc with GTPSTools
 ---
 - Version 1.2
 1. Updated DontShowUI (For Auto Restarter)
+---
+- Version 1.3
+1. Updated Hosts Auto Maker (Just Input IP VPS)
 ## How to use
 1. Put this app to your GTPS Folder
 2. Change enet server test.exe to enet.exe
